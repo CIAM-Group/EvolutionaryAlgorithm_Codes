@@ -1,6 +1,7 @@
 classdef MOP_CH < PROBLEM
     % <multi/many> <real> <large/none> <expensive/none>
-    % Benchmark MOP proposed by Deb, Thiele, Laumanns, and Zitzler
+    % Benchmark MOP proposed by Zhenkun Wang, Li Qingyan, Yang Qite, 
+    % and Hisao Ishibuchi.
     %------------------------------- Reference --------------------------------
     %Wang Z, Li Q, Yang Q, et al. The dilemma between eliminating 
     %dominance-resistant solutions and preserving boundary solutions of 
@@ -27,8 +28,7 @@ classdef MOP_CH < PROBLEM
         %% Calculate objective values
         function PopObj = CalObj(obj,PopDec)
             [N,D]  = size(PopDec);
-            M      = obj.M;
-            
+            M      = obj.M;         
             %% dynamic distance function
             g = zeros(N,M);
             k = zeros(N,M);
@@ -37,8 +37,7 @@ classdef MOP_CH < PROBLEM
                     xm = PopDec(i,M+j-1:M:D);
                     g(i,j) = 100*(length(xm) +sum( (xm - 0.5).^2 - cos(20*pi*(xm - 0.5))));
                 end
-            end
-            
+            end         
             k(:,1) = 1 - PopDec(:,1);
             k(:,M) = prod(PopDec(:,1:M-1),2);
             for i = 2 : M-1
@@ -49,22 +48,8 @@ classdef MOP_CH < PROBLEM
         end
         %% Sample reference points on Pareto front
         function P = GetOptimum(obj,N)
-            if obj.M == 3
-                num         = floor(sqrt(N));
-                no          = num*num;
-                [s,t]       = meshgrid(linspace(0,1,num),linspace(0,1,num));
-                ps          = zeros(obj.M,no);
-                ps(1,:)     = reshape(s,[1,no]);
-                ps(2,:)     = reshape(t,[1,no]);
-                ps(3:obj.M,:) = repmat(ps(2,:),[obj.M-2,1]).*repmat(ps(1,:),[obj.M-2,1]);
-                pf          = zeros(3,no);
-                pf(1,:)     = 1-sqrt(cos(0.5*pi*ps(1,:)).*cos(0.5*pi*ps(2,:)));
-                pf(2,:)     = 1-sqrt(cos(0.5*pi*ps(1,:)).*sin(0.5*pi*ps(2,:)));
-                pf(3,:)     = 1-sqrt(sin(0.5*pi*ps(1,:)));
-                R = pf';
-            else
-                R = [];
-            end
+            P = UniformPoint(N,obj.M);
+            P = 1-(P.^0.25);
         end
         %% Generate the image of Pareto front
         function R = GetPF(obj)

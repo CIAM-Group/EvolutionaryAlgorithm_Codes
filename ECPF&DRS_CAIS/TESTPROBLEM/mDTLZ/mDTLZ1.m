@@ -1,9 +1,9 @@
 classdef mDTLZ1 < PROBLEM
     % <multi/many> <real> <large/none> <expensive/none>
-    % Benchmark MOP proposed Zhenkun Wang
+    % Benchmark MOP proposed Zhenkun Wang, Yew-Soon Ong, and Hisao Ishibuchi.
     %------------------------------- Reference --------------------------------
-    % Wang Z, Ong Y S, Ishibuchi H. On scalable multiobjective test problems 
-    % with hardly dominated boundaries[J]. IEEE Transactions on Evolutionary 
+    % Wang Z, Ong Y S, Ishibuchi H. On scalable multiobjective test problems
+    % with hardly dominated boundaries[J]. IEEE Transactions on Evolutionary
     % Computation, 2018, 23(2): 217-231
     %------------------------------- Copyright --------------------------------
     % Copyright (c) 2018-2019 BIMK Group. You are free to use the PlatEMO for
@@ -26,12 +26,12 @@ classdef mDTLZ1 < PROBLEM
         %% Calculate objective values
         function PopObj = CalObj(obj,PopDec)
             [N,D]  = size(PopDec);
-            M      = obj.Global.M;       
+            M      = obj.Global.M;
             g = zeros(N,M);
             for i = 1:N
-                 for j = 1 : M 
-                     xm = PopDec(i,M+j-1:M:D);
-                     g(i,j) = 100*(length(xm) +sum( (xm - 0.5).^2 - cos(20*pi*(xm - 0.5))));
+                for j = 1 : M
+                    xm = PopDec(i,M+j-1:M:D);
+                    g(i,j) = 100*(length(xm) +sum( (xm - 0.5).^2 - cos(20*pi*(xm - 0.5))));
                 end
             end
             PopObj = 0.5*(1+g).*(1-fliplr(cumprod([ones(N,1),PopDec(:,1:M-1)],2)).*[ones(N,1),1-PopDec(:,M-1:-1:1)]);
@@ -51,11 +51,12 @@ classdef mDTLZ1 < PROBLEM
                 pf(2,:)     = 0.5*(1-ps(1,:).*(1-ps(2,:)));
                 pf(3,:)     = 0.5*(ps(1,:));
                 R = pf';
-            else
-                R = [];
             end
         end
-        
+%         function R = GetOptimum(obj,N)
+%             R = UniformPoint(N,obj.M)/2;
+%             R = 0.5.*(1-R);
+%         end
         %% Generate the image of Pareto front
         function R = GetPF(obj)
             if obj.M == 2
