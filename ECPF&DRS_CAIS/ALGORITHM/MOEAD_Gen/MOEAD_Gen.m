@@ -50,10 +50,18 @@ classdef MOEAD_Gen< ALGORITHM
                 % Update the neighbours
                 % MOEA/D-Gen
                 delta = 0.01;
-                kk = abs(Population(P).objs-(repmat(Z,T,1)-delta));
+
+                % before
+                % kk = abs(Population(P).objs-(repmat(Z,T,1)-delta));
+                % k = abs(Offspring.obj - (Z - delta));
+                % g_old = max((kk + rho.*repmat(sum(kk,2),1,Problem.M)).*W(P,:),[],2);
+                % g_new = max((k + rho.*repmat(k,T,1)).*W(P,:),[],2);
+                % after modification
+                kk = abs(Population(P).objs - (Z - delta));
                 k = abs(Offspring.obj - (Z - delta));
-                g_old = max((kk + rho.*repmat(sum(kk,2),1,Problem.M)).*W(P,:),[],2);
-                g_new = max((k + rho.*repmat(k,T,1)).*W(P,:),[],2);
+                g_old = max((kk + rho.*sum(kk,2)) .* W(P,:), [], 2);
+                g_new = max((k + rho.*sum(k,2)) .* W(P,:), [], 2);
+                
                 Population(P(g_old>=g_new)) = Offspring;
 
             end
