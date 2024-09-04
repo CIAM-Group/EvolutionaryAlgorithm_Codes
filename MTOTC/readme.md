@@ -1,1 +1,1 @@
-The source code of the paper： Li, G., Wang, Z., Gao, W., & Wang, L. (2024). Decoupling Constraint: Task Clone-Based Multi-Tasking Optimization for Constrained Multi-Objective Optimization. IEEE Transactions on Evolutionary Computation.
+Source code of the paper： Li, G., Wang, Z., Gao, W., & Wang, L. (2024). Decoupling Constraint: Task Clone-Based Multi-Tasking Optimization for Constrained Multi-Objective Optimization. IEEE Transactions on Evolutionary Computation.
