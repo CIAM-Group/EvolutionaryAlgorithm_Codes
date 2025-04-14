@@ -397,6 +397,8 @@ class MOEAD_MD(MOEAD_MD_BASE):
                 random_number = random.random()
                 if random_number <= self.pi[i]:
                     selected_indices.append(i)
+        return selected_indices
+
 
     def get_p1_p2(self, i: int, select_rate):
         pop = self.pop
