@@ -11,29 +11,31 @@ method_params = {
         'mx_eval_num': 2000,
         'mx_time': 1000,  # 单位s
         'fun': 'gTe',  # 'gWs'
-        'trick': [],  # 'IGR', 'MFI', 'DRA', 'N+N'
-        'test_trick': [],  # 'bias0.1', 'relative', 'real'/'mean'/'matchJ/sum', 'sumT'/'meanT'/'meanS/meanSV2', 'deltaT5'
+        'trick': ['IGR', 'DRA'],  # 'IGR', 'MFI', 'DRA', 'N+N'
+        'test_trick': ['matchV', 'mean', 'sumT'],  # 'bias0.1', 'relative', 'real'/'mean'/'matchJ/sum', 'sumT'/'meanT'/'meanS/meanSV2', 'deltaT5'
         'gr_rate': 1,
         'delta_T': 5,
         'bias': 0
     }
 }
-output_name = ""
+output_name = "run"
 
 data_params = {
     'input_dir': './data/inputs250',
-    'output_dir': f'./all_data/outputs250/{output_name}',
+    'output_dest': './data/outputs250',
+    'output_dir': f'./data/outputs250/{output_name}',
 }
 
 logger_params = {
     'log_file': {
-        'desc': f'{output_name}',  # f'{output_name}_{model_pk_name}'
+        'desc': f'{output_name}',
         'filename': 'run_log'
     }
 }
 
 ##########################################################################################
 # main
+import os
 import re
 import sys
 import logging
@@ -41,18 +43,13 @@ from utils.utils import create_logger, copy_all_src, get_result_folder
 from MOEAD_MD.moead_md import MOEAD_MD
 
 def main():
-    # 第一个参数是编号
-    # 第二个参数是ns_size
-    method_params['moead_params']['ns_size'] = sys.argv[2]
-    output_name = f'MOEAD_IGRCount_ns{sys.argv[2]}_no{sys.argv[1]}'
-    data_params['output_dir'] = f'./all_data/outputs250/{output_name}'
-    logger_params['log_file']['desc'] = f'{output_name}'
+    if not os.path.exists(data_params['output_dest']):
+        os.makedirs(data_params['output_dest'])
 
     create_logger(**logger_params)
     _print_config()
 
     copy_all_src(get_result_folder())
-    # 执行算法
     moead_md = MOEAD_MD(method_params=method_params,
                         data_params=data_params)
     moead_md.run()
