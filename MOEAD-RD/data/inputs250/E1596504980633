@@ -1,0 +1,2177 @@
+{
+    "estimateCode": "E1596504980633",
+    "algorithmBaseParamDto": {
+        "platformDtoList": [
+            {
+                "platformCode": "platform12",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform06",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform03",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform07",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform08",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform09",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform02",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform05",
+                "mustFirst": false
+            },
+            {
+                "platformCode": "platform04",
+                "mustFirst": false
+            }
+        ],
+        "truckTypeDtoList": [
+            {
+                "truckTypeId": "40001",
+                "truckTypeCode": "R110",
+                "truckTypeName": "20GP",
+                "length": 5890.0,
+                "width": 2318.0,
+                "height": 2270.0,
+                "maxLoad": 18000.0
+            },
+            {
+                "truckTypeId": "42001",
+                "truckTypeCode": "CT03",
+                "truckTypeName": "40HQ",
+                "length": 11920.0,
+                "width": 2318.0,
+                "height": 2600.0,
+                "maxLoad": 23000.0
+            }
+        ],
+        "truckTypeMap": {
+            "40001": {
+                "truckTypeId": "40001",
+                "truckTypeCode": "R110",
+                "truckTypeName": "20GP",
+                "length": 5890.0,
+                "width": 2318.0,
+                "height": 2270.0,
+                "maxLoad": 18000.0
+            },
+            "42001": {
+                "truckTypeId": "42001",
+                "truckTypeCode": "CT03",
+                "truckTypeName": "40HQ",
+                "length": 11920.0,
+                "width": 2318.0,
+                "height": 2600.0,
+                "maxLoad": 23000.0
+            }
+        },
+        "distanceMap": {
+            "platform12+platform06": 26577.0,
+            "platform12+platform03": 36419.0,
+            "platform12+platform07": 7422.0,
+            "platform12+platform08": 7481.0,
+            "platform12+platform09": 7486.0,
+            "platform12+platform02": 11419.0,
+            "platform12+platform05": 16476.0,
+            "platform12+platform04": 15473.0,
+            "platform12+end_point": 80461.0,
+            "platform06+platform12": 26567.0,
+            "platform06+platform03": 51662.0,
+            "platform06+platform07": 21381.0,
+            "platform06+platform08": 21440.0,
+            "platform06+platform09": 21445.0,
+            "platform06+platform02": 42337.0,
+            "platform06+platform05": 31719.0,
+            "platform06+platform04": 31987.0,
+            "platform06+end_point": 62921.0,
+            "platform03+platform12": 33416.0,
+            "platform03+platform06": 52104.0,
+            "platform03+platform07": 34962.0,
+            "platform03+platform08": 35021.0,
+            "platform03+platform09": 35026.0,
+            "platform03+platform02": 49983.0,
+            "platform03+platform05": 25518.0,
+            "platform03+platform04": 14212.0,
+            "platform03+end_point": 102048.0,
+            "platform07+platform12": 7762.0,
+            "platform07+platform06": 20546.0,
+            "platform07+platform03": 33159.0,
+            "platform07+platform08": 59.0,
+            "platform07+platform09": 64.0,
+            "platform07+platform02": 17509.0,
+            "platform07+platform05": 13216.0,
+            "platform07+platform04": 12213.0,
+            "platform07+end_point": 80669.0,
+            "platform08+platform12": 7703.0,
+            "platform08+platform06": 20487.0,
+            "platform08+platform03": 33100.0,
+            "platform08+platform07": 59.0,
+            "platform08+platform09": 6.0,
+            "platform08+platform02": 17450.0,
+            "platform08+platform05": 13157.0,
+            "platform08+platform04": 12154.0,
+            "platform08+end_point": 80610.0,
+            "platform09+platform12": 7697.0,
+            "platform09+platform06": 20481.0,
+            "platform09+platform03": 33094.0,
+            "platform09+platform07": 64.0,
+            "platform09+platform08": 6.0,
+            "platform09+platform02": 17444.0,
+            "platform09+platform05": 13151.0,
+            "platform09+platform04": 12148.0,
+            "platform09+end_point": 80604.0,
+            "platform02+platform12": 11468.0,
+            "platform02+platform06": 41733.0,
+            "platform02+platform03": 50767.0,
+            "platform02+platform07": 18206.0,
+            "platform02+platform08": 18265.0,
+            "platform02+platform09": 18270.0,
+            "platform02+platform05": 26237.0,
+            "platform02+platform04": 25234.0,
+            "platform02+end_point": 63476.0,
+            "platform05+platform12": 14979.0,
+            "platform05+platform06": 31579.0,
+            "platform05+platform03": 23997.0,
+            "platform05+platform07": 12199.0,
+            "platform05+platform08": 12258.0,
+            "platform05+platform09": 12263.0,
+            "platform05+platform02": 24726.0,
+            "platform05+platform04": 294.0,
+            "platform05+end_point": 90019.0,
+            "platform04+platform12": 15301.0,
+            "platform04+platform06": 31846.0,
+            "platform04+platform03": 24264.0,
+            "platform04+platform07": 12521.0,
+            "platform04+platform08": 12580.0,
+            "platform04+platform09": 12585.0,
+            "platform04+platform02": 25048.0,
+            "platform04+platform05": 294.0,
+            "platform04+end_point": 90286.0,
+            "start_point+platform12": 81903.0,
+            "start_point+platform06": 61209.0,
+            "start_point+platform03": 103418.0,
+            "start_point+platform07": 81448.0,
+            "start_point+platform08": 81507.0,
+            "start_point+platform09": 81512.0,
+            "start_point+platform02": 63207.0,
+            "start_point+platform05": 89580.0,
+            "start_point+platform04": 89848.0
+        }
+    },
+    "boxes": [
+        {
+            "spuBoxId": "94266080107L069",
+            "platformCode": "platform07",
+            "length": 830.0,
+            "width": 730.0,
+            "height": 716.0,
+            "weight": 52.5
+        },
+        {
+            "spuBoxId": "94266080107P437",
+            "platformCode": "platform09",
+            "length": 770.0,
+            "width": 770.0,
+            "height": 480.0,
+            "weight": 33.0
+        },
+        {
+            "spuBoxId": "94266080107T220",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T219",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T218",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T217",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T216",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T215",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T214",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T213",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T212",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T211",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T210",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T209",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T208",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T207",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T206",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T205",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T204",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T203",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T202",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T201",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T200",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T199",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T198",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T197",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T196",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T195",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T194",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T193",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T192",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T191",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T190",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T189",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T188",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T187",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T186",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T185",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T184",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T183",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T182",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107F517",
+            "platformCode": "platform06",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 112.0
+        },
+        {
+            "spuBoxId": "94266080107F558",
+            "platformCode": "platform06",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 113.2
+        },
+        {
+            "spuBoxId": "94266080107F548",
+            "platformCode": "platform06",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 113.2
+        },
+        {
+            "spuBoxId": "94266080107F546",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107F552",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107F538",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107F534",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107F564",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107F477",
+            "platformCode": "platform02",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 115.0
+        },
+        {
+            "spuBoxId": "94266080107K718",
+            "platformCode": "platform07",
+            "length": 1020.0,
+            "width": 1020.0,
+            "height": 560.0,
+            "weight": 318.4
+        },
+        {
+            "spuBoxId": "94266080107F515",
+            "platformCode": "platform06",
+            "length": 730.0,
+            "width": 744.0,
+            "height": 2221.0,
+            "weight": 112.2
+        },
+        {
+            "spuBoxId": "94266080107T181",
+            "platformCode": "platform12",
+            "length": 605.0,
+            "width": 605.0,
+            "height": 495.0,
+            "weight": 260.0
+        },
+        {
+            "spuBoxId": "94266080107T099",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T098",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T097",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T096",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T095",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T094",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107P493",
+            "platformCode": "platform02",
+            "length": 940.0,
+            "width": 1160.0,
+            "height": 2555.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107T093",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107P497",
+            "platformCode": "platform02",
+            "length": 940.0,
+            "width": 1160.0,
+            "height": 2555.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107P435",
+            "platformCode": "platform05",
+            "length": 530.0,
+            "width": 530.0,
+            "height": 210.0,
+            "weight": 49.0
+        },
+        {
+            "spuBoxId": "94266080107T092",
+            "platformCode": "platform12",
+            "length": 610.0,
+            "width": 605.0,
+            "height": 455.0,
+            "weight": 231.0
+        },
+        {
+            "spuBoxId": "94266080107P439",
+            "platformCode": "platform09",
+            "length": 770.0,
+            "width": 770.0,
+            "height": 430.0,
+            "weight": 56.0
+        },
+        {
+            "spuBoxId": "94266080107P335",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.6
+        },
+        {
+            "spuBoxId": "94266080107P334",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.8
+        },
+        {
+            "spuBoxId": "942660801077326",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 600.0,
+            "height": 910.0,
+            "weight": 101.5
+        },
+        {
+            "spuBoxId": "942660801077325",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 600.0,
+            "height": 910.0,
+            "weight": 101.5
+        },
+        {
+            "spuBoxId": "94266080107C420",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 148.5
+        },
+        {
+            "spuBoxId": "94266080107C419",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 150.5
+        },
+        {
+            "spuBoxId": "94266080107C418",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 150.0
+        },
+        {
+            "spuBoxId": "94266080107C417",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 151.0
+        },
+        {
+            "spuBoxId": "94266080107C416",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 151.0
+        },
+        {
+            "spuBoxId": "94266080107L393",
+            "platformCode": "platform04",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 645.0,
+            "weight": 69.5
+        },
+        {
+            "spuBoxId": "94266080107C415",
+            "platformCode": "platform04",
+            "length": 1140.0,
+            "width": 670.0,
+            "height": 1114.0,
+            "weight": 150.0
+        },
+        {
+            "spuBoxId": "94266080107K239",
+            "platformCode": "platform09",
+            "length": 1100.0,
+            "width": 1100.0,
+            "height": 1009.0,
+            "weight": 94.5
+        },
+        {
+            "spuBoxId": "94266080107K923",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 508.0,
+            "weight": 72.5
+        },
+        {
+            "spuBoxId": "94266080107K238",
+            "platformCode": "platform09",
+            "length": 880.0,
+            "width": 560.0,
+            "height": 585.0,
+            "weight": 26.0
+        },
+        {
+            "spuBoxId": "94266080107L019",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 903.0,
+            "weight": 146.0
+        },
+        {
+            "spuBoxId": "94266080107L018",
+            "platformCode": "platform09",
+            "length": 770.0,
+            "width": 770.0,
+            "height": 501.0,
+            "weight": 47.0
+        },
+        {
+            "spuBoxId": "94266080107D195",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 1140.0,
+            "height": 1224.0,
+            "weight": 568.0
+        },
+        {
+            "spuBoxId": "94266080107D194",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 1140.0,
+            "height": 708.0,
+            "weight": 330.5
+        },
+        {
+            "spuBoxId": "94266080107J533",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 79.4
+        },
+        {
+            "spuBoxId": "94266080107J532",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.2
+        },
+        {
+            "spuBoxId": "94266080107K886",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.2
+        },
+        {
+            "spuBoxId": "94266080107K885",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 79.8
+        },
+        {
+            "spuBoxId": "94266080107K884",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 79.6
+        },
+        {
+            "spuBoxId": "94266080107K883",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.6
+        },
+        {
+            "spuBoxId": "94266080107K882",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.2
+        },
+        {
+            "spuBoxId": "94266080107K881",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.6
+        },
+        {
+            "spuBoxId": "94266080107K880",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 81.0
+        },
+        {
+            "spuBoxId": "94266080107K879",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 79.4
+        },
+        {
+            "spuBoxId": "94266080107L078",
+            "platformCode": "platform09",
+            "length": 800.0,
+            "width": 600.0,
+            "height": 835.0,
+            "weight": 30.5
+        },
+        {
+            "spuBoxId": "94266080107K878",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 79.4
+        },
+        {
+            "spuBoxId": "94266080107L077",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 845.0,
+            "weight": 65.0
+        },
+        {
+            "spuBoxId": "94266080107L076",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 845.0,
+            "weight": 65.0
+        },
+        {
+            "spuBoxId": "94266080107K877",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.4
+        },
+        {
+            "spuBoxId": "94266080107K876",
+            "platformCode": "platform07",
+            "length": 1130.0,
+            "width": 740.0,
+            "height": 720.0,
+            "weight": 80.0
+        },
+        {
+            "spuBoxId": "94266080107L075",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 845.0,
+            "weight": 64.5
+        },
+        {
+            "spuBoxId": "94266080107P394",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 65.0
+        },
+        {
+            "spuBoxId": "94266080107P393",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 65.8
+        },
+        {
+            "spuBoxId": "94266080107P392",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 65.2
+        },
+        {
+            "spuBoxId": "94266080107P391",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 65.6
+        },
+        {
+            "spuBoxId": "94266080107P390",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 64.6
+        },
+        {
+            "spuBoxId": "94266080107P389",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 64.6
+        },
+        {
+            "spuBoxId": "94266080107P388",
+            "platformCode": "platform04",
+            "length": 800.0,
+            "width": 480.0,
+            "height": 700.0,
+            "weight": 65.0
+        },
+        {
+            "spuBoxId": "94266080107C352",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 1141.0,
+            "height": 1226.0,
+            "weight": 565.0
+        },
+        {
+            "spuBoxId": "94266080107C351",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 1141.0,
+            "height": 1226.0,
+            "weight": 567.0
+        },
+        {
+            "spuBoxId": "94266080107C349",
+            "platformCode": "platform03",
+            "length": 800.0,
+            "width": 600.0,
+            "height": 620.0,
+            "weight": 79.5
+        },
+        {
+            "spuBoxId": "94266080107L026",
+            "platformCode": "platform09",
+            "length": 790.0,
+            "width": 600.0,
+            "height": 695.0,
+            "weight": 59.0
+        },
+        {
+            "spuBoxId": "94266080107J511",
+            "platformCode": "platform09",
+            "length": 880.0,
+            "width": 560.0,
+            "height": 585.0,
+            "weight": 57.0
+        },
+        {
+            "spuBoxId": "94266080107C350",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 1140.0,
+            "height": 695.0,
+            "weight": 315.0
+        },
+        {
+            "spuBoxId": "94266080107K751",
+            "platformCode": "platform05",
+            "length": 420.0,
+            "width": 420.0,
+            "height": 200.0,
+            "weight": 40.44
+        },
+        {
+            "spuBoxId": "94266080107K750",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 99.2
+        },
+        {
+            "spuBoxId": "94266080107K749",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 98.4
+        },
+        {
+            "spuBoxId": "94266080107L044",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 34.9
+        },
+        {
+            "spuBoxId": "94266080107K748",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 103.2
+        },
+        {
+            "spuBoxId": "94266080107L043",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 34.9
+        },
+        {
+            "spuBoxId": "94266080107K747",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 99.2
+        },
+        {
+            "spuBoxId": "94266080107K746",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 99.4
+        },
+        {
+            "spuBoxId": "94266080107L042",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 34.88
+        },
+        {
+            "spuBoxId": "94266080107L041",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 34.87
+        },
+        {
+            "spuBoxId": "94266080107B026",
+            "platformCode": "platform09",
+            "length": 1100.0,
+            "width": 1100.0,
+            "height": 1221.0,
+            "weight": 112.0
+        },
+        {
+            "spuBoxId": "94266080107K745",
+            "platformCode": "platform05",
+            "length": 550.0,
+            "width": 460.0,
+            "height": 550.0,
+            "weight": 101.4
+        },
+        {
+            "spuBoxId": "94266080107K744",
+            "platformCode": "platform05",
+            "length": 1120.0,
+            "width": 1120.0,
+            "height": 1060.0,
+            "weight": 847.5
+        },
+        {
+            "spuBoxId": "94266080107K752",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 494.0,
+            "weight": 62.5
+        },
+        {
+            "spuBoxId": "94266080107J544",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 35.4
+        },
+        {
+            "spuBoxId": "94266080107K309",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 840.0,
+            "weight": 89.0
+        },
+        {
+            "spuBoxId": "94266080107L088",
+            "platformCode": "platform09",
+            "length": 770.0,
+            "width": 770.0,
+            "height": 494.0,
+            "weight": 34.0
+        },
+        {
+            "spuBoxId": "94266080107B025",
+            "platformCode": "platform09",
+            "length": 1100.0,
+            "width": 1100.0,
+            "height": 593.0,
+            "weight": 59.0
+        },
+        {
+            "spuBoxId": "94266080107P430",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 882.0,
+            "weight": 126.0
+        },
+        {
+            "spuBoxId": "94266080107J546",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 769.0,
+            "weight": 354.5
+        },
+        {
+            "spuBoxId": "94266080107K516",
+            "platformCode": "platform05",
+            "length": 360.0,
+            "width": 360.0,
+            "height": 170.0,
+            "weight": 33.3
+        },
+        {
+            "spuBoxId": "94266080107L040",
+            "platformCode": "platform05",
+            "length": 380.0,
+            "width": 380.0,
+            "height": 160.0,
+            "weight": 34.86
+        },
+        {
+            "spuBoxId": "94266080107K898",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 1249.0,
+            "weight": 186.5
+        },
+        {
+            "spuBoxId": "94266080107K636",
+            "platformCode": "platform09",
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 854.0,
+            "weight": 139.5
+        },
+        {
+            "spuBoxId": "94266080107A247",
+            "platformCode": "platform04",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 3.44
+        },
+        {
+            "spuBoxId": "94266080107F539",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F553",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F547",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F535",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F565",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.74
+        },
+        {
+            "spuBoxId": "94266080107F478",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.78
+        },
+        {
+            "spuBoxId": "94266080107F516",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F518",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F549",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107F559",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.76
+        },
+        {
+            "spuBoxId": "94266080107P322",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P293",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P318",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P273",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P326",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.95
+        },
+        {
+            "spuBoxId": "94266080107P305",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P314",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P312",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.95
+        },
+        {
+            "spuBoxId": "94266080107B736",
+            "platformCode": "platform08",
+            "length": 218.0,
+            "width": 173.0,
+            "height": 92.0,
+            "weight": 0.35
+        },
+        {
+            "spuBoxId": "94266080107B795",
+            "platformCode": "platform08",
+            "length": 218.0,
+            "width": 173.0,
+            "height": 92.0,
+            "weight": 0.25
+        },
+        {
+            "spuBoxId": "94266080107P296",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P277",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P319",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P289",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P291",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107P294",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P281",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P286",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107B728",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107K868",
+            "platformCode": "platform09",
+            "length": 340.0,
+            "width": 340.0,
+            "height": 170.0,
+            "weight": 26.2
+        },
+        {
+            "spuBoxId": "94266080107P284",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 0.55
+        },
+        {
+            "spuBoxId": "94266080107P320",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.95
+        },
+        {
+            "spuBoxId": "94266080107M614",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 175.0,
+            "weight": 11.1
+        },
+        {
+            "spuBoxId": "94266080107P496",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.75
+        },
+        {
+            "spuBoxId": "94266080107P285",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.95
+        },
+        {
+            "spuBoxId": "94266080107P492",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.75
+        },
+        {
+            "spuBoxId": "94266080107P270",
+            "platformCode": "platform08",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 15.9
+        },
+        {
+            "spuBoxId": "94266080107M152",
+            "platformCode": "platform09",
+            "length": 605.0,
+            "width": 383.0,
+            "height": 440.0,
+            "weight": 11.18
+        },
+        {
+            "spuBoxId": "94266080107P443",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 235.0,
+            "weight": 7.48
+        },
+        {
+            "spuBoxId": "942660801079506",
+            "platformCode": "platform09",
+            "length": 605.0,
+            "width": 383.0,
+            "height": 440.0,
+            "weight": 15.5
+        },
+        {
+            "spuBoxId": "94266080107E321",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107E328",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107E323",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107L046",
+            "platformCode": "platform09",
+            "length": 590.0,
+            "width": 390.0,
+            "height": 310.0,
+            "weight": 3.3
+        },
+        {
+            "spuBoxId": "94266080107E326",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107E319",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107J491",
+            "platformCode": "platform09",
+            "length": 530.0,
+            "width": 380.0,
+            "height": 355.0,
+            "weight": 29.0
+        },
+        {
+            "spuBoxId": "94266080107L022",
+            "platformCode": "platform09",
+            "length": 590.0,
+            "width": 390.0,
+            "height": 310.0,
+            "weight": 3.25
+        },
+        {
+            "spuBoxId": "94266080107E322",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107P488",
+            "platformCode": "platform09",
+            "length": 785.0,
+            "width": 405.0,
+            "height": 385.0,
+            "weight": 32.0
+        },
+        {
+            "spuBoxId": "94266080107E320",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107E325",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107J552",
+            "platformCode": "platform09",
+            "length": 785.0,
+            "width": 405.0,
+            "height": 385.0,
+            "weight": 31.5
+        },
+        {
+            "spuBoxId": "94266080107K985",
+            "platformCode": "platform09",
+            "length": 373.0,
+            "width": 363.0,
+            "height": 104.0,
+            "weight": 9.2
+        },
+        {
+            "spuBoxId": "94266080107P494",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 4.0
+        },
+        {
+            "spuBoxId": "94266080107P500",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 4.05
+        },
+        {
+            "spuBoxId": "94266080107J516",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 3.95
+        },
+        {
+            "spuBoxId": "94266080107E324",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107L047",
+            "platformCode": "platform09",
+            "length": 590.0,
+            "width": 390.0,
+            "height": 310.0,
+            "weight": 3.3
+        },
+        {
+            "spuBoxId": "94266080107P489",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 4.0
+        },
+        {
+            "spuBoxId": "94266080107E327",
+            "platformCode": "platform08",
+            "length": 345.0,
+            "width": 255.0,
+            "height": 95.0,
+            "weight": 2.4
+        },
+        {
+            "spuBoxId": "94266080107P498",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 4.0
+        },
+        {
+            "spuBoxId": "94266080107F795",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F798",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F785",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F797",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F777",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F792",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F800",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F779",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F786",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107F803",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.7
+        },
+        {
+            "spuBoxId": "94266080107K914",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 1.18
+        },
+        {
+            "spuBoxId": "942660801078379",
+            "platformCode": "platform04",
+            "length": 375.0,
+            "width": 375.0,
+            "height": 350.0,
+            "weight": 9.7
+        },
+        {
+            "spuBoxId": "94266080107L597",
+            "platformCode": "platform04",
+            "length": 625.0,
+            "width": 570.0,
+            "height": 370.0,
+            "weight": 17.5
+        },
+        {
+            "spuBoxId": "94266080107L091",
+            "platformCode": "platform09",
+            "length": 785.0,
+            "width": 405.0,
+            "height": 735.0,
+            "weight": 14.5
+        },
+        {
+            "spuBoxId": "94266080107L596",
+            "platformCode": "platform04",
+            "length": 625.0,
+            "width": 570.0,
+            "height": 370.0,
+            "weight": 19.58
+        },
+        {
+            "spuBoxId": "94266080107K912",
+            "platformCode": "platform09",
+            "length": 480.0,
+            "width": 480.0,
+            "height": 170.0,
+            "weight": 13.77
+        },
+        {
+            "spuBoxId": "94266080107L394",
+            "platformCode": "platform04",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 175.0,
+            "weight": 3.4
+        },
+        {
+            "spuBoxId": "94266080107K908",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 1.64
+        },
+        {
+            "spuBoxId": "94266080107L090",
+            "platformCode": "platform09",
+            "length": 523.0,
+            "width": 384.0,
+            "height": 352.0,
+            "weight": 19.7
+        },
+        {
+            "spuBoxId": "94266080107K909",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 1.26
+        },
+        {
+            "spuBoxId": "94266080107L067",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 235.0,
+            "weight": 5.14
+        },
+        {
+            "spuBoxId": "942660801078382",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 6.12
+        },
+        {
+            "spuBoxId": "94266080107K875",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 6.36
+        },
+        {
+            "spuBoxId": "94266080107L025",
+            "platformCode": "platform09",
+            "length": 782.0,
+            "width": 402.0,
+            "height": 550.0,
+            "weight": 27.0
+        },
+        {
+            "spuBoxId": "94266080107C353",
+            "platformCode": "platform03",
+            "length": 2980.0,
+            "width": 535.0,
+            "height": 269.0,
+            "weight": 62.5
+        },
+        {
+            "spuBoxId": "94266080107L045",
+            "platformCode": "platform09",
+            "length": 350.0,
+            "width": 350.0,
+            "height": 130.0,
+            "weight": 17.7
+        },
+        {
+            "spuBoxId": "94266080107B028",
+            "platformCode": "platform09",
+            "length": 625.0,
+            "width": 570.0,
+            "height": 275.0,
+            "weight": 6.0
+        },
+        {
+            "spuBoxId": "94266080107B027",
+            "platformCode": "platform09",
+            "length": 625.0,
+            "width": 570.0,
+            "height": 275.0,
+            "weight": 6.0
+        },
+        {
+            "spuBoxId": "94266080107J547",
+            "platformCode": "platform09",
+            "length": 590.0,
+            "width": 390.0,
+            "height": 310.0,
+            "weight": 25.46
+        },
+        {
+            "spuBoxId": "94266080107K517",
+            "platformCode": "platform09",
+            "length": 350.0,
+            "width": 350.0,
+            "height": 170.0,
+            "weight": 27.1
+        },
+        {
+            "spuBoxId": "94266080107J545",
+            "platformCode": "platform09",
+            "length": 350.0,
+            "width": 350.0,
+            "height": 160.0,
+            "weight": 27.89
+        },
+        {
+            "spuBoxId": "94266080107A587",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.58
+        },
+        {
+            "spuBoxId": "94266080107K232",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 3.66
+        },
+        {
+            "spuBoxId": "94266080107K515",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 4.02
+        },
+        {
+            "spuBoxId": "94266080107L258",
+            "platformCode": "platform04",
+            "length": 782.0,
+            "width": 402.0,
+            "height": 550.0,
+            "weight": 28.56
+        },
+        {
+            "spuBoxId": "94266080107L020",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.32
+        },
+        {
+            "spuBoxId": "94266080107K518",
+            "platformCode": "platform09",
+            "length": 605.0,
+            "width": 383.0,
+            "height": 440.0,
+            "weight": 9.0
+        },
+        {
+            "spuBoxId": "94266080107L257",
+            "platformCode": "platform04",
+            "length": 390.0,
+            "width": 270.0,
+            "height": 55.0,
+            "weight": 0.6
+        },
+        {
+            "spuBoxId": "94266080107L277",
+            "platformCode": "platform04",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 7.27
+        },
+        {
+            "spuBoxId": "94266080107L066",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 175.0,
+            "weight": 4.36
+        },
+        {
+            "spuBoxId": "94266080107K308",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 2.36
+        },
+        {
+            "spuBoxId": "94266080107B023",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 4.52
+        },
+        {
+            "spuBoxId": "94266080107B029",
+            "platformCode": "platform09",
+            "length": 385.0,
+            "width": 355.0,
+            "height": 100.0,
+            "weight": 2.52
+        },
+        {
+            "spuBoxId": "94266080107K897",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 365.0,
+            "height": 235.0,
+            "weight": 1.74
+        },
+        {
+            "spuBoxId": "94266080107B022",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.58
+        },
+        {
+            "spuBoxId": "94266080107L087",
+            "platformCode": "platform09",
+            "length": 605.0,
+            "width": 383.0,
+            "height": 440.0,
+            "weight": 8.94
+        },
+        {
+            "spuBoxId": "94266080107A586",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 225.0,
+            "height": 95.0,
+            "weight": 0.58
+        },
+        {
+            "spuBoxId": "94266080107L276",
+            "platformCode": "platform04",
+            "length": 260.0,
+            "width": 175.0,
+            "height": 55.0,
+            "weight": 0.57
+        },
+        {
+            "spuBoxId": "94266080107K307",
+            "platformCode": "platform09",
+            "length": 525.0,
+            "width": 425.0,
+            "height": 205.0,
+            "weight": 8.22
+        },
+        {
+            "spuBoxId": "94266080107J543",
+            "platformCode": "platform09",
+            "length": 375.0,
+            "width": 375.0,
+            "height": 350.0,
+            "weight": 12.96
+        }
+    ]
+}
