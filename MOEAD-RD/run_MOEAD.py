@@ -11,7 +11,7 @@ method_params = {
         'mx_eval_num': 2000,
         'mx_time': 1000,  # 单位s
         'fun': 'gTe',  # 'gWs'
-        'trick': ['IGR', 'DRA'],  # 'IGR', 'MFI', 'DRA', 'N+N'
+        'trick': ['IGR', 'GRA'],  # 'IGR', 'MFI', 'DRA', 'N+N'
         'test_trick': ['matchV', 'mean', 'sumT'],  # 'bias0.1', 'relative', 'real'/'mean'/'matchJ/sum', 'sumT'/'meanT'/'meanS/meanSV2', 'deltaT5'
         'gr_rate': 1,
         'delta_T': 5,
