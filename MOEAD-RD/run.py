@@ -18,7 +18,7 @@ method_params = {
         'bias': 0
     }
 }
-output_name = "run"
+output_name = "MOEADRD"
 
 data_params = {
     'input_dir': './data/inputs250',
