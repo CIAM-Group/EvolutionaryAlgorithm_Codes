@@ -152,7 +152,7 @@ def get_nomalized_nondomain_f1f2_and_F1F2(many_all_f1f2s):
                 nondomain_f1f2.append([f1, f2, algorithm])
                 algorithms_nondomain_nomalized_f1f2[algorithm][instance].append([f1, f2])
                 continue
-            if nondomain_f1f2[-1][1] > f2:
+            if nondomain_f1f2[-1][1] > f2: # 未被其他算法支配的解
                 nondomain_f1f2.append([f1, f2, algorithm])
                 algorithms_nondomain_nomalized_f1f2[algorithm][instance].append([f1, f2])
 
@@ -222,10 +222,13 @@ def get_allOutputs_Hvs(all_all_nomalized_f1f2_listlist):
 def printHV(input_dir, all_outputs_dir, logger=None):
     # 获得所有算法的 所有文件 上的 f1f2 # 画出当前算法
     many_all_f1f2s = get_allOutputs_f1_f2(input_dir, all_outputs_dir)
-    # 获得(非支配且)归一化后的f1f2
-    algorithms_nondomain_nomalized_f1f2, \
-    all_nondomain_f1f2, \
-    F1F2s = get_nomalized_nondomain_f1f2_and_F1F2(many_all_f1f2s)
+    # # 获得(非支配且)归一化后的f1f2
+    # algorithms_nondomain_nomalized_f1f2, all_nondomain_f1f2, F1F2s = get_nomalized_nondomain_f1f2_and_F1F2(many_all_f1f2s)
+    # 直接读取给定的 F1Fns
+    F1F2s,all_nondomain_f1f2 = None,None
+    output_filename = os.path.join(os.path.dirname(all_outputs_dir), 'F1F2s.json')
+    with open(output_filename , 'r') as f:
+        F1F2s = json.load(f)
     # 获得归一化的f1 f2
     all_all_nomalized_f1f2s = get_allOutputs_nomalized_f1f2(many_all_f1f2s, F1F2s)
     # 获得HV值
