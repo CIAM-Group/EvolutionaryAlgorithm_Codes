@@ -141,7 +141,8 @@ class MOEAD_MD_BASE():
         all_output_dir = self.data_params['output_dir'].split('/')
         output_name = all_output_dir.pop()
         all_output_dir = os.sep.join(all_output_dir)
-        F1F2s, all_nondomain_f1f2 = printHV(self.data_params['input_dir'], all_output_dir, self.logger)
+        # F1F2s, all_nondomain_f1f2 = printHV(self.data_params['input_dir'], all_output_dir, self.logger)
+        printHV(self.data_params['input_dir'], all_output_dir, self.logger)
         self.logger.info('Total Time: {:.3f}'.format(time.time() - start))
         self.logger.info('=================================================================')
 
